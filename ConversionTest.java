@@ -29,12 +29,12 @@ public class ConversionTest {
 
     @Test
     public void returnCorrectBalanceAfterTwoYears(){
-        assertEquals("6510.00", convert.getInterest(6000.0,4.25,2));
+        assertEquals("6520.84", convert.getInterest(6000.0,4.25,2));
     }
 
     @Test
     public void returnCorrectBalanceAfterThreeYears(){
-        assertEquals("6765.00", convert.getInterest(6000.0,4.25,3));
+        assertEquals("6797.97", convert.getInterest(6000.0,4.25,3));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class ConversionTest {
 
     @Test
     public void getAnswerFromMathmagicianProblem(){
-        assertEquals("-50", convert.mathMagician());
+        assertEquals(-50, convert.mathMagician());
     }
 
     @Test

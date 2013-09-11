@@ -6,7 +6,7 @@ public class DigitFlip {
         String list = "";
         for (int i = 0; i < number.length(); i++){
             flipped[i] = (num % 10);
-            list = list + flipped[i];
+            list += flipped[i];
             num /= 10;
         }
         return Integer.parseInt(list);

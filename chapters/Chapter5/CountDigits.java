@@ -1,6 +1,6 @@
 public class CountDigits {
 
-    public int count(int digit){
+    public int nDigits(int digit){
         String number = String.valueOf(digit);
         return number.length();
     }

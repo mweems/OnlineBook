@@ -8,11 +8,11 @@ public class CountDigitsTest {
 
     @Test
     public void returnOneWhenPassedASingleDigit(){
-        assertEquals(1, count.count(1));
+        assertEquals(1, count.nDigits(1));
     }
 
     @Test
     public void returnTwoWhenPassedTwoDigits(){
-        assertEquals(2, count.count(21));
+        assertEquals(2, count.nDigits(21));
     }
 }

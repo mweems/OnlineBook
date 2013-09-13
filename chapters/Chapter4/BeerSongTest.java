@@ -8,5 +8,6 @@ public class BeerSongTest {
     public void printTheWordsToBeerSong(){
         BeerSong song = new BeerSong();
         assertEquals("song played", song.sing(10));
+        assertEquals("song played", song.sing(2));
     }
 }

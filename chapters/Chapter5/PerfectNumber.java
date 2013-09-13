@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class PerfectNumber {
 
     public boolean isPerfect(int num){
@@ -16,11 +19,12 @@ public class PerfectNumber {
         return false;
     }
 
-    public String findPerfect(int begin, int end){
-        String perfectNum = "";
+    public Integer[] findPerfect(int begin, int end){
+        List<Integer> ints = new ArrayList<Integer>();
         for(int i = begin; i <= end; i++ ){
-            if(isPerfect(i)) perfectNum += i + ",";
+            if(isPerfect(i)) ints.add(i);
         }
-        return perfectNum;
+        Integer[] foo = new Integer[ints.size()];
+        return ints.toArray(foo);
     }
 }

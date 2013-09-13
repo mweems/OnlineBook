@@ -1,14 +1,19 @@
 public class BeerSong {
 
-    String lyric1 = " bottles of beer";
-    String lyric2 = " on the wall";
+    final String lyric1Singular = " bottle of beer";
+    final String lyric1Plural = " bottles of beer";
+    final String lyric2 = " on the wall";
 
     public String sing(int startingBottles){
        for(int bottles = startingBottles; bottles > 0; bottles --){
-           System.out.println(bottles + lyric1 + lyric2);
-           System.out.println(bottles + lyric1);
+
+           String currentLyric = bottles == 1 ? lyric1Singular : lyric1Plural;
+           System.out.println(bottles + currentLyric + lyric2);
+           System.out.println(bottles + currentLyric);
            System.out.println("You take one down, Pass it around ");
-           System.out.println(bottles - 1 + lyric1 + lyric2);
+
+           String nextLyric = bottles == 2 ? lyric1Singular : lyric1Plural;
+           System.out.println(bottles - 1 + nextLyric + lyric2);
         }
         return "song played";
     }

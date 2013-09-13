@@ -18,6 +18,6 @@ public class PerfectNumberTest {
 
     @Test
     public void returnPerfectNumbersFoundInARange(){
-        assertEquals("6,28,496,8128,", number.findPerfect(1,9999));
+        assertEquals(new int[] {6,28,496,8128}, number.findPerfect(1,9999));
     }
 }

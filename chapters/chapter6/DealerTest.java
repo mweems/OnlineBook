@@ -12,7 +12,7 @@ public class DealerTest {
     @Test
     public void returnsACard()
     {
-       Random rand = new Random();
+       Random rand = new Random(100);
        Dealer dealer = new Dealer(rand);
        Card card = dealer.dealCard();
        assertNotNull(card);
